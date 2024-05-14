@@ -129,7 +129,7 @@ func (c *Conn) Write(data []byte, file string) bool {
 		c.Log.Errorf("Failed to close cloud conn : %s", err.Error())
 		return false
 	}
-	c.Log.Infof("successfully writtern object{%s} to {%s}", file, c.provider)
+	c.Log.Infof("Successfully written object{%s} to {%s}", file, c.provider)
 	return true
 }
 
